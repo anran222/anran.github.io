@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yzy</title>
+    <link rel="stylesheet" href="yzy.css">
+</head>
+<body>
+<div id="zhu">
+    <div id="daohang">
+        <div class=" d_left">
+            <h1 class="dao1">YZY</h1>
+        </div>
+        <div class="d_right">
+            <ul>
+                <li><a href="#">主页</a></li>
+                <li><a href="www.baidu.com">相册</a></li>
+                <li>动态</li>
+                <li>关于我</li>
+            </ul>
+        </div>
+    </div>
+    <div id="fu">
+        <section id="first">
+     <div id="tou">
+         <img  class="touxiang" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=149399904,65917100&fm=26&gp=0.jpg">
+     </div>
+        <div id="miaosu"></div>
+    </section>
+    <section>
+        <div class="left_1">
+            <img src="yzy3.jpg" width="540px" height="300px">
+        </div>
+        <div class="right_1">
+            <div class="peng">
+                <h1 class="peng_1">年少时，一见心动，再见心倾</h1>
+                    <p class="peng_2">就是那么奇怪。
+                        你总是讨厌她那么粘人，像个没遮没羞的橡皮糖，甜的过于发腻，让自己备受难堪，她能不能收敛一点，能不能别再跟一个满脸写着我最喜欢你的广告牌似的，大大方方的站在那里，毫无畏惧的反而令自己羞耻，这个世界怎么了，太疯狂了，这件事。<br><br>
+
+                        就是那么奇怪。
+                        你怎么觉得连他推开你的动作，都是帅气的一气呵成呢，他装着琥珀的眼睛，像是邀请星星跳舞的神仙，如果自己不伸出手应邀就太逊了，可是我该先抓住他的手么，还是先闭上眼，直接承蒙一个吻呢，会是草莓加点胡椒粉的味道么，这真是个难题，太疯狂了，这件事。</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="left_2">
+            <div class="qu" >
+                <h1 class="qu_1">我本想杀了你，可我却爱上了你</h1>
+                <p class="qu_2">有时候一切突然变得非常简单，<br>
+                    就像所有事物在一瞬间改变了，<br>
+                    …接着你想：去他妈的。<br><br>
+                    很奇怪，很多时候，<br>
+                    你并没有意识到生命中重要时刻的来临，<br>
+                    但在回首往事时，才发现那些时刻很重要。</p>
+            </div>>
+        </div>
+        <div class="right_2" >
+            <img src="yzy4.jpg" width="550px" height="300px">
+        </div>
+    </section>
+        <section>
+            <div class="left_3" >
+                <img src="yzy5.jpg" width="540px" height="300px">
+            </div>
+            <div class="right_3">
+                <div class="ai">
+                    <h1 class="ai_1">
+                        我需要你胜过你需要我……这样不公平……
+                    </h1>
+                    <p class="ai_2">
+                        爱情有时让人生病，令人疼痛，使人百般折磨。但是，它却又是可以治愈一切的良药。<br>
+                        正如伯格曼所言：“爱是所有瘟疫中最为黑暗的。 假如一个人可以为爱而死，那么它还会有些乐趣，可是人们几乎都可以在爱的创伤中痊愈。
+                        如果在这个不完美的世界一切都是不完美的，爱是完全不完美中最为完美的。”<br><br>
+                        爱情能让人烦恼，爱情能让人疯狂，爱情是无药可医的病，但爱情又能让人重回天真，拾起被丢弃的那句“我爱你”。<br>
+                        因为爱情，所有的病都不药而愈。
+                    </p>
+                </div>
+            </div>
+        </section>
+</div>
+</div>
+<script src="jquery-3.2.1.js"></script>
+<script>
+    function snow() {
+        //1、定义一片雪花模板
+        var flake = $("<div>").css({
+            "position": "absolute",
+            "color": "#fff"
+        }).html("❄");
+
+        //获取页面的宽度，利用这个数来算出，雪花开始时left的值
+        var documentWidth = $(document).width();
+
+        //获取页面的高度 相当于雪花下落结束时Y轴的位置
+        var documentHieght = $(document).height();
+
+        //定义生成一片雪花的毫秒数
+        var millisec = 200;
+        //2、设置第一个定时器，周期性定时器，每隔一段时间（millisec）生成一片雪花；
+        setInterval(function() {
+            //随机生成雪花下落 开始 时left的值，相当于开始时X轴的位置
+            var startLeft = Math.random() * documentWidth;
+
+            //随机生成雪花下落 结束 时left的值，相当于结束时X轴的位置
+            var endLeft = Math.random() * documentWidth;
+
+            //随机生成雪花大小
+            var flakeSize = 5 + 30 * Math.random();
+
+            //随机生成雪花下落持续时间
+            var durationTime = 4000 + 7000 * Math.random();
+
+            //随机生成雪花下落 开始 时的透明度
+            var startOpacity = 0.7 + 0.3 * Math.random();
+
+            //随机生成雪花下落 结束 时的透明度
+            var endOpacity = 0.2 + 0.2 * Math.random();
+
+            //3、克隆一个雪花模板,定义雪花的初始样式，拼接到页面中
+            flake.clone().appendTo($("body")).css({
+                "left": startLeft,
+                "opacity": startOpacity,
+                "font-size": flakeSize,
+                "top": "-25px",
+            }).animate({ //执行动画
+                "left": endLeft,
+                "opacity": endOpacity,
+                "top": documentHieght
+            }, durationTime, function() {
+                //4、当雪花落下后，删除雪花。
+                $(this).remove();
+            });
+        }, millisec);
+    };
+    snow();
+</script>
+</body>
+</html>

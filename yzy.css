@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: url("https://preview.qiantucdn.com/58pic/35/49/87/3558PIC58PICx4pP0858PIC683Af4_PIC2018.jpg!w1024_new_small");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ul li{
+  list-style: none;
+    display: inline-block;
+}
+#daohang{
+    width: 100%;
+    height: 40px;
+    background: black;
+    color: white;
+    position:fixed;
+    opacity: 0.7;
+    z-index: auto;
+}
+.d_left{
+    float: left;
+    margin-left: 20px;
+}
+.d_right{
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+#fu{
+    clear-after: both;
+}
+#tou{
+    text-align: center;
+}
+.touxiang{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+#first{
+    height: 230px;
+    width: 100%;
+    opacity: 0.9;
+    float: left;
+}
+.left_1{
+    clear-after: both;
+    width: 40%;
+    height: 300px;
+    float: left;
+}
+.right_1{
+    clear-after: top;
+    background-color: black;
+    height: 300px;
+    width: 60%;
+    float: right;
+    opacity: 0.7;
+}
+.peng{
+    color: white;
+}
+.peng_1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.peng_2{
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.left_2{
+    clear-after: both;
+    background-color: darkslategrey;
+    width: 60%;
+    height: 300px;
+    float: left;
+    opacity: 0.7;
+}
+.right_2{
+    background-color: aliceblue;
+    width: 40%;
+    height: 300px;
+    float: right;
+}
+.qu{
+   color: white;
+}
+.qu_1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.qu_2{
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.left_3{
+    width: 40%;
+    width: 300px;
+    float: left;
+}
+.right_3{
+    background-color: slategray;
+    width: 60%;
+    height: 300px;
+    float: right;
+    opacity: 0.7;
+}
+#last{
+    clear-after: both;
+    background-color: black;
+    float: left;
+    color: white;
+}
+.ai{
+    color: white;
+}
+.ai_1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.ai_2{
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
